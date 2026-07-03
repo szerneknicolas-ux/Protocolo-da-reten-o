@@ -1,0 +1,6 @@
+{
+  "name": "Protocolo da Retenção Total",
+  "description": "Landing page para o Protocolo da Retenção Total de Gio Seed.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
