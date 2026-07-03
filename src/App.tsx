@@ -375,7 +375,7 @@ export default function App() {
               <div className="parcelas">ou 12x de R$19,70</div>
             </div>
 
-            <a href="#" className="cta-btn">Quero acessar o Protocolo agora</a>
+            <a href="https://sun.eduzz.com/40QRV7AP9B" className="cta-btn" target="_blank" rel="noopener noreferrer">Quero acessar o Protocolo agora</a>
           </div>
           </div>
         </div>
@@ -424,7 +424,7 @@ export default function App() {
             </div>
           </div>
           <p className="choices-note">Eu sei, e você também sabe: a <em>opção 2</em> é a mais inteligente.</p>
-          <a href="#oferta" className="cta-btn cta-pulse" style={{ display: 'block', maxWidth: '420px', margin: '32px auto 0', textAlign: 'center' }}>QUERO DESTRAVAR AGORA</a>
+          <a href="https://sun.eduzz.com/40QRV7AP9B" className="cta-btn cta-pulse" target="_blank" rel="noopener noreferrer" style={{ display: 'block', maxWidth: '420px', margin: '32px auto 0', textAlign: 'center' }}>QUERO DESTRAVAR AGORA</a>
         </div>
       </section>
 
