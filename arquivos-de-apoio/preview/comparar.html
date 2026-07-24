@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Comparação responsiva — Gio Seed</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#e9ebef;font-family:Arial,sans-serif;color:#171717}
+    header{height:54px;padding:0 18px;display:flex;align-items:center;gap:28px;background:#fff;border-bottom:1px solid #ccd0d6;font-weight:700}
+    .badge{padding:6px 10px;border-radius:999px;background:#eef0f4;color:#555;font-size:12px}
+    main{height:calc(100vh - 54px);padding:18px;display:flex;gap:20px;overflow:auto}
+    .panel{flex:none;overflow:hidden;background:#fff;border:1px solid #c9cdd3;border-radius:14px;box-shadow:0 5px 18px #0002}
+    .bar{height:36px;display:flex;align-items:center;justify-content:center;background:#f7f7f8;border-bottom:1px solid #ddd;color:#555;font-size:12px}
+    .phone{width:390px;height:844px}.phone iframe{width:390px;height:808px;border:0}
+    .desktop{width:720px;height:844px}.desktop-viewport{width:1440px;height:1616px;transform:scale(.5);transform-origin:top left}.desktop iframe{width:1440px;height:1616px;border:0}
+  </style>
+</head>
+<body>
+  <header>Preview responsivo <span class="badge">Celular: 390 px</span><span class="badge">Computador: 1440 px</span></header>
+  <main>
+    <section class="panel phone"><div class="bar">CELULAR — 390 × 844</div><iframe src="/" title="Preview celular"></iframe></section>
+    <section class="panel desktop"><div class="bar">COMPUTADOR — 1440 px (reduzido para caber)</div><div class="desktop-viewport"><iframe src="/" title="Preview computador"></iframe></div></section>
+  </main>
+</body>
+</html>
