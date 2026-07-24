@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Landing Page — Protocolo da Retenção Total
 
-# Run and deploy your AI Studio app
+## Onde editar
 
-This contains everything you need to run your app locally.
+- Conteúdo e textos: `src/paginas/LandingPage.tsx`
+- Cores, fontes e alinhamentos: `src/estilos/landing-page.css`
+- Imagens publicadas: `public/imagens-da-landing-page/`
+- Entrada do site: `index.html`
 
-View your app in AI Studio: https://ai.studio/apps/1098468b-b252-4f07-ae62-ed84f8899b5a
+## Rodar no computador
 
-## Run Locally
+```bash
+npm install
+npm run dev
+```
 
-**Prerequisites:**  Node.js
+## Gerar para hospedagem
 
+```bash
+npm run build
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+A versão pronta será criada automaticamente em `dist/`.
+
+## O que não enviar ao GitHub
+
+- `node_modules/`
+- `dist/`
+- `desnecessario/`
+
+Esses caminhos já estão configurados no `.gitignore`.

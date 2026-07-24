@@ -31,6 +31,10 @@ img { max-width: 100%; height: auto; }
 .gold-italic { color: var(--gold); font-style: italic; font-weight: 400; }
 
 section { padding: 72px 0; }
+section:not(.hero) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 760px;
+}
 
 /* ===== LABEL ===== */
 .label {

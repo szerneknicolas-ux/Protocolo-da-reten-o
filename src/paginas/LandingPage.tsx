@@ -20,7 +20,7 @@ export default function LandingPage() {
           <h1 className="!text-[27px]">Você apaga vídeos porque<br />não sabe <span className="accent">o que falar?</span></h1>
           <p className="sub !text-[18px] !text-[#c7c7c7] !font-sans !leading-relaxed"><strong className="!text-white !font-semibold">Pare de travar na hora de gravar</strong> e saiba exatamente o que falar para criar vídeos que <strong className="!text-white !font-semibold">prendem até o final</strong> com o <strong className="!text-[var(--gold)] !font-semibold">Protocolo da Retenção Total</strong>.</p>
           <div className="hero-img">
-            <img src="/imagens-da-landing-page/hero-antes-depois-v2.png" alt="Antes: mulher cansada sem conseguir gravar. Depois: a mesma mulher feliz após gravar seu vídeo." />
+            <img src="/imagens-da-landing-page/hero-antes-depois.webp" alt="Antes: mulher cansada sem conseguir gravar. Depois: a mesma mulher feliz após gravar seu vídeo." width="1200" height="675" fetchPriority="high" decoding="async" />
             <div className="hero-img-caption">
               <span className="cap-antes">Antes</span>
               <span className="cap-depois">Depois</span>
@@ -36,11 +36,11 @@ export default function LandingPage() {
           <h2 className="section-title !text-[18px]">Veja o resultado de um dos meus alunos<br />usando o <em>Protocolo da Retenção Total</em></h2>
           <div className="proof-grid">
             <div className="proof-col">
-              <img src="/imagens-da-landing-page/testemunho-antes.jpeg" alt="Perfil antes" />
+              <img src="/imagens-da-landing-page/testemunho-antes.webp" alt="Perfil antes" width="500" height="1087" loading="lazy" decoding="async" />
               <div className="tag tag-antes">Antes</div>
             </div>
             <div className="proof-col">
-              <img src="/imagens-da-landing-page/testemunho-depois.jpeg" alt="Perfil depois" />
+              <img src="/imagens-da-landing-page/testemunho-depois.webp" alt="Perfil depois" width="500" height="1087" loading="lazy" decoding="async" />
               <div className="tag tag-depois">Depois</div>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function LandingPage() {
           </div>
           <div className="dor-stage">
             <div className="dor-img">
-              <img src="/imagens-da-landing-page/mulher-cansada.png" alt="Frustração ao gravar" />
+              <img src="/imagens-da-landing-page/mulher-cansada.webp" alt="Frustração ao gravar" width="800" height="1000" loading="lazy" decoding="async" />
             </div>
             <div className="dor-thoughts">
               <div className="thought t1">Eu queria só sentar, gravar e postar.</div>
@@ -341,7 +341,7 @@ export default function LandingPage() {
       <section className="oferta" id="oferta">
         <div className="container">
           <div className="offer-layout">
-          <img src="/imagens-da-landing-page/mockup.png" alt="Mockup Protocolo da Retenção Total" className="offer-mockup" />
+          <img src="/imagens-da-landing-page/mockup.webp" alt="Mockup Protocolo da Retenção Total" className="offer-mockup" width="1200" height="675" loading="lazy" decoding="async" />
           <div className="offer-card">
             <h3 className="!text-[21px]">Protocolo da Retenção Total</h3>
             <p className="subline !text-[18px]">Tudo que você precisa para nunca mais travar na frente da câmera</p>
@@ -434,7 +434,7 @@ export default function LandingPage() {
       <section className="about">
         <div className="container">
           <div className="about-card">
-            <img src="/imagens-da-landing-page/foto-giovanni.png" alt="Gio Seed" className="about-photo" />
+            <img src="/imagens-da-landing-page/foto-giovanni.webp" alt="Gio Seed" className="about-photo" width="400" height="600" loading="lazy" decoding="async" />
             <div className="section-label label" style={{ textAlign: 'center' }}>Quem está por trás</div>
             <h3>O criador do Protocolo é o <em>Gio Seed</em></h3>
             <p>Giovanni Santos de Oliveira nasceu no interior do Amazonas, em Itacoatiara. Trabalhou desde os 12 anos, passou um ano fazendo freelance em supermercados de Jaraguá do Sul e aprendeu edição sozinho, no YouTube, gravando com o próprio celular.</p>
@@ -476,7 +476,7 @@ export default function LandingPage() {
 
       <footer>
         <div className="footer-cta">
-          <img src="/imagens-da-landing-page/logo.jpeg" alt="Gio Seed" className="footer-logo" />
+          <img src="/imagens-da-landing-page/logo.webp" alt="Gio Seed" className="footer-logo" width="240" height="240" loading="lazy" decoding="async" />
         </div>
         <p>Tem alguma dúvida? Fale com a gente: <a className="footer-mail" href="mailto:gioseed@icloud.com">gioseed@icloud.com</a></p>
         <p className="disclaimer">Este site não é afiliado ao Instagram, TikTok ou a qualquer outra plataforma. A compra deste material não garante nenhum tipo de resultado. Os resultados dependem da aplicação individual de cada pessoa. Fazemos todos os esforços para apresentar de forma clara e honesta a proposta do produto.</p>
