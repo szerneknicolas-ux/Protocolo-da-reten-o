@@ -18,7 +18,7 @@ export default function LandingPage() {
       <section className="hero">
         <div className="container">
           <h1 className="!text-[27px]">Você apaga vídeos porque<br />não sabe <span className="accent">o que falar?</span></h1>
-          <p className="sub !text-[18px] !text-[#c7c7c7] !font-sans !leading-relaxed"><strong className="!text-white !font-semibold">Pare de travar na hora de gravar</strong> e saiba exatamente o que falar para criar vídeos que <strong className="!text-white !font-semibold">prendem até o final</strong> com o <strong className="!text-[var(--gold)] !font-semibold">Protocolo da Retenção Total</strong>.</p>
+          <p className="sub !text-[18px] !text-[#c7c7c7] !font-sans !leading-relaxed"><strong className="!text-white !font-semibold">Pare de travar na hora de gravar</strong> e saiba exatamente o que falar para <strong className="!text-white !font-semibold">viralizar</strong> com o <strong className="!text-[var(--gold)] !font-semibold">Protocolo da Retenção Total</strong>.</p>
           <div className="hero-img">
             <img src="/imagens-da-landing-page/hero-antes-depois.webp" alt="Antes: mulher cansada sem conseguir gravar. Depois: a mesma mulher feliz após gravar seu vídeo." width="1200" height="675" fetchPriority="high" decoding="async" />
             <div className="hero-img-caption">
@@ -377,7 +377,7 @@ export default function LandingPage() {
               <div className="parcelas">ou em até 12x no cartão</div>
             </div>
 
-            <a href="https://sun.eduzz.com/40QRV7AP9B" className="cta-btn" target="_blank" rel="noopener noreferrer">Quero acessar o Protocolo agora</a>
+            <a href="https://sun.eduzz.com/40QRV7AP9B" className="cta-btn" target="_blank" rel="noopener noreferrer">Quero acessar o Protocolo</a>
           </div>
           </div>
         </div>
