@@ -1,26 +1,33 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
-import { Compass, Crown, Video, Sparkles, Calendar, TrendingUp, Layers, Magnet, FileText, Bot, Smile, Infinity, Clapperboard, Lock, MessageSquare, Cpu, Rocket, Unlock } from 'lucide-react';
+import { Compass, Crown, Video, Sparkles, Calendar, TrendingUp, Layers, Magnet, FileText, Bot, Smile, Infinity, Clapperboard, Lock, MessageSquare, Cpu, Unlock } from 'lucide-react';
 import { motion } from 'motion/react';
+
+const CHECKOUT = "https://sun.eduzz.com/40QRV7AP9B";
 
 export default function LandingPage() {
   return (
     <>
-      {/* ===== HERO ===== */}
+      {/* ===== 1. HERO ===== */}
       <section className="hero">
         <div className="container">
-          <h1 className="!text-[27px]">Você apaga vídeos porque<br />não sabe <span className="accent">o que falar?</span></h1>
-          <p className="sub !text-[18px] !text-[#c7c7c7] !font-sans !leading-relaxed"><strong className="!text-white !font-semibold">Pare de travar na hora de gravar</strong> e saiba exatamente o que falar para <strong className="!text-white !font-semibold">viralizar</strong> com o <strong className="!text-[var(--gold)] !font-semibold">Protocolo da Retenção Total</strong>.</p>
+          <h1>
+            Você não precisa saber falar bem na câmera.<br />
+            <span className="accent">Precisa saber o que falar.</span>
+          </h1>
+          <p className="sub">
+            Descubra o método de 3 passos que transforma qualquer ideia em um roteiro fácil de gravar. Sem decorar, sem improvisar, sem parecer um robô.
+          </p>
+          <div className="hero-cta-wrap">
+            <a href="#oferta" className="cta-btn">
+              QUERO SABER O QUE FALAR
+            </a>
+          </div>
           <div className="hero-img">
-            <img src="/imagens-da-landing-page/hero-antes-depois.webp" alt="Antes: mulher cansada sem conseguir gravar. Depois: a mesma mulher feliz após gravar seu vídeo." width="1200" height="675" fetchPriority="high" decoding="async" />
+            <img
+              src="/imagens-da-landing-page/hero-antes-depois.webp"
+              alt="Antes: travando na câmera. Depois: gravando com facilidade."
+              width="1200" height="675"
+              fetchPriority="high" decoding="async"
+            />
             <div className="hero-img-caption">
               <span className="cap-antes">Antes</span>
               <span className="cap-depois">Depois</span>
@@ -29,408 +36,203 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===== PROVA SOCIAL ===== */}
-      <section>
-        <div className="container">
-          <div className="section-label label">Resultado real</div>
-          <h2 className="section-title !text-[18px]">Veja o resultado de um dos meus alunos<br />usando o <em>Protocolo da Retenção Total</em></h2>
-          <div className="proof-grid">
-            <div className="proof-col">
-              <img src="/imagens-da-landing-page/testemunho-antes.webp" alt="Perfil antes" width="500" height="1087" loading="lazy" decoding="async" />
-              <div className="tag tag-antes">Antes</div>
-            </div>
-            <div className="proof-col">
-              <img src="/imagens-da-landing-page/testemunho-depois.webp" alt="Perfil depois" width="500" height="1087" loading="lazy" decoding="async" />
-              <div className="tag tag-depois">Depois</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== DOR ===== */}
+      {/* ===== 2. IDENTIFICAÇÃO ===== */}
       <section className="dor">
         <div className="container !max-w-5xl">
           <div className="dor-head">
-            <span className="dor-kicker">Isso acontece com você?</span>
-            <h2>Você não aguenta mais <strong>gravar e apagar vídeos.</strong></h2>
-            <p className="dor-transition">E sofre com <span>pensamentos</span> como...</p>
+            <span className="dor-kicker">Você se identifica com isso?</span>
+            <h2>A câmera liga. <strong>Sua cabeça vai a zero.</strong></h2>
+            <p className="dor-transition">E você fica pensando...</p>
           </div>
           <div className="dor-stage">
             <div className="dor-img">
               <img src="/imagens-da-landing-page/mulher-cansada.webp" alt="Frustração ao gravar" width="800" height="1000" loading="lazy" decoding="async" />
             </div>
             <div className="dor-thoughts">
-              <div className="thought t1">Eu queria só sentar, gravar e postar.</div>
-              <div className="thought t2">Sem roteiro eu me perco.</div>
-              <div className="thought t3">Eu travo quando aperto o botão de gravar.</div>
+              <div className="thought t1">Sem roteiro eu me perco. Com roteiro eu pareço um robô.</div>
+              <div className="thought t2">Eu travo quando aperto o botão de gravar.</div>
+              <div className="thought t3">Conversando eu sou desenrolada. Gravando eu viro outra pessoa.</div>
               <div className="thought t4">O ChatGPT escreve bonito, mas não escreve do meu jeito.</div>
-              <div className="thought t5">Cara... eu sei explicar isso conversando, mas na câmera eu travo.</div>
+              <div className="thought t5">Eu sei o que quero dizer, mas na câmera some tudo.</div>
+            </div>
+          </div>
+          <div className="identifica-end">
+            <p className="identifica-texto">Seu problema não é<br />simplesmente saber falar.</p>
+            <p className="identifica-destaque">É saber o que falar.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 3. CONTRADIÇÃO ===== */}
+      <section className="contra">
+        <div className="container">
+          <h2 className="section-title !text-[20px]">
+            Você não precisa escolher entre <em>ficar perdida e parecer um robô.</em>
+          </h2>
+          <p className="contra-sub">Existe um terceiro caminho.</p>
+          <div className="contra-grid">
+            <div className="contra-col contra-bad">
+              <div className="contra-label">Sem roteiro</div>
+              <ul className="contra-list">
+                <li><span className="contra-x">✕</span>Você trava</li>
+                <li><span className="contra-x">✕</span>Esquece tudo</li>
+                <li><span className="contra-x">✕</span>Se perde no meio</li>
+                <li><span className="contra-x">✕</span>Improvisa demais</li>
+                <li><span className="contra-x">✕</span>Apaga o vídeo</li>
+              </ul>
+            </div>
+            <div className="contra-col contra-mid">
+              <div className="contra-label">Roteiro tradicional</div>
+              <ul className="contra-list">
+                <li><span className="contra-x">✕</span>Precisa decorar</li>
+                <li><span className="contra-x">✕</span>Fica artificial</li>
+                <li><span className="contra-x">✕</span>Parece que está lendo</li>
+                <li><span className="contra-x">✕</span>Perde a naturalidade</li>
+                <li><span className="contra-x">✕</span>Fica engessado</li>
+              </ul>
+            </div>
+            <div className="contra-col contra-best">
+              <div className="contra-label">Protocolo da Retenção Total</div>
+              <ul className="contra-list">
+                <li><span className="contra-ok">✓</span>Estrutura clara</li>
+                <li><span className="contra-ok">✓</span>Sabe o que falar</li>
+                <li><span className="contra-ok">✓</span>Fala naturalmente</li>
+                <li><span className="contra-ok">✓</span>Sem decorar</li>
+                <li><span className="contra-ok">✓</span>Grava com facilidade</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== AGITAÇÃO ===== */}
-      <section className="agita">
+      {/* ===== 4. APRESENTAÇÃO DO PROTOCOLO ===== */}
+      <section className="proto-intro">
         <div className="container">
-          <span className="agita-kicker">Chega de roteiro genérico</span>
-          <p className="agita-lead">Você não aguenta mais montar roteiros ruins feitos com o ChatGPT que as pessoas pulam nos primeiros segundos.</p>
-          <div className="agita-divider" />
-          <p className="agita-eyebrow">Agora eu te pergunto</p>
-          <h2 className="agita-question">Se você pudesse ter acesso à estrutura de roteiros que <span className="highlight">convertem seguidores todos os dias</span>, você iria adquirir?</h2>
-          <p className="agita-close">Se a resposta for <strong>sim</strong>, então o Protocolo da Retenção Total é para você.</p>
-          <a href="#oferta" className="cta-btn">QUERO ACESSAR O PROTOCOLO</a>
+          <div className="section-label label">O método</div>
+          <h2 className="section-title">Conheça o <em>Protocolo da Retenção Total.</em></h2>
+          <p className="proto-desc">Um método de 3 passos para transformar qualquer ideia em um roteiro fácil de gravar.</p>
+          <div className="proto-nao-decora">
+            <p>Não é para decorar.</p>
+            <p>Não é para improvisar.</p>
+            <p className="proto-sim">É para você saber exatamente<br />o que falar.</p>
+          </div>
         </div>
       </section>
 
-      {/* ===== BENEFÍCIOS ===== */}
+      {/* ===== 5. OS 3 PASSOS ===== */}
+      <section className="passos-section">
+        <div className="container">
+          <div className="section-label label">Método de 3 passos</div>
+          <h2 className="section-title">Como funciona</h2>
+          <div className="passos-grid">
+            <div className="passo-card">
+              <div className="passo-num">01</div>
+              <div className="passo-nome">GANCHO</div>
+              <p>A abertura que faz a pessoa parar o scroll e continuar assistindo nos primeiros segundos.</p>
+            </div>
+            <div className="passo-seta">→</div>
+            <div className="passo-card">
+              <div className="passo-num">02</div>
+              <div className="passo-nome">HISTÓRIA</div>
+              <p>Transforme sua ideia em uma narrativa que conecta. A pessoa se vê no que você está falando.</p>
+            </div>
+            <div className="passo-seta">→</div>
+            <div className="passo-card">
+              <div className="passo-num">03</div>
+              <div className="passo-nome">CHAMADA</div>
+              <p>Direcione a pessoa para uma ação clara, sem forçar e sem perder a naturalidade.</p>
+            </div>
+          </div>
+          <div className="passos-resultado">
+            <span className="passos-resultado-label">Resultado:</span> Um roteiro que você consegue gravar. Sem decorar. Sem travar.
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '40px' }}>
+            <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer">
+              QUERO SABER O QUE FALAR
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 6. PROVA SOCIAL ===== */}
       <section>
         <div className="container">
-          <h2 className="section-title">Com o Protocolo da Retenção Total você vai:</h2>
-          <div className="benef-grid">
-            <motion.div 
-              className="benef"
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-            >
-              <span className="check">
-                <Compass size={16} strokeWidth={2.5} />
-              </span>
-              <p>Ter uma estrutura tão clara que nem precisa pensar muito.</p>
-            </motion.div>
-            <motion.div 
-              className="benef"
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            >
-              <span className="check">
-                <Crown size={16} strokeWidth={2.5} />
-              </span>
-              <p>Virar referência no nicho por causa da comunicação.</p>
-            </motion.div>
-            <motion.div 
-              className="benef"
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            >
-              <span className="check">
-                <Video size={16} strokeWidth={2.5} />
-              </span>
-              <p>Sentar, gravar e postar no mesmo dia.</p>
-            </motion.div>
-            <motion.div 
-              className="benef"
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-            >
-              <span className="check">
-                <Sparkles size={16} strokeWidth={2.5} />
-              </span>
-              <p>Não depender mais de trends ou dancinhas.</p>
-            </motion.div>
-            <motion.div 
-              className="benef"
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-            >
-              <span className="check">
-                <Calendar size={16} strokeWidth={2.5} />
-              </span>
-              <p>Conseguir criar conteúdo todos os dias sem sofrimento.</p>
-            </motion.div>
-            <motion.div 
-              className="benef"
-              initial={{ opacity: 0, x: -40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
-            >
-              <span className="check">
-                <TrendingUp size={16} strokeWidth={2.5} />
-              </span>
-              <p>Conseguir vender só com os próprios vídeos no orgânico.</p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== ENTREGÁVEIS DETALHADOS ===== */}
-      <section>
-        <div className="container">
-          <h2 className="section-title !text-[24px]">Veja tudo que você vai receber<br />no <em>Protocolo da Retenção Total</em></h2>
-          <div className="deliverables">
-            <div className="deliver-item">
-              <div className="deliver-num">
-                <Layers size={22} strokeWidth={2.2} />
-              </div>
-              <div className="deliver-text">
-                <h4>Método Protocolo da Retenção Total</h4>
-                <p>A estrutura completa em 3 passos para transformar qualquer ideia em um roteiro que prende do primeiro ao último segundo. Mesmo que você trave na frente da câmera.</p>
-              </div>
+          <div className="section-label label">Resultado real</div>
+          <h2 className="section-title !text-[18px]">
+            O antes e depois do próprio <em>Gio Seed</em>
+          </h2>
+          <div className="proof-grid">
+            <div className="proof-col">
+              <img src="/imagens-da-landing-page/testemunho-antes-novo.jpeg" alt="Perfil antes" width="500" height="1087" loading="lazy" decoding="async" />
+              <div className="tag tag-antes">Antes</div>
             </div>
-            <div className="deliver-item">
-              <div className="deliver-num">
-                <FileText size={22} strokeWidth={2.2} />
-              </div>
-              <div className="deliver-text">
-                <h4>Roteiro Modelo "Preenche e Grava" <span className="tag-bonus">Bônus</span></h4>
-                <p>Um roteiro estruturado com lacunas pra você preencher e gravar na hora. Sem travar, sem tela em branco. É só copiar, adaptar e publicar.</p>
-              </div>
-            </div>
-            <div className="deliver-item">
-              <div className="deliver-num">
-                <Magnet size={22} strokeWidth={2.2} />
-              </div>
-              <div className="deliver-text">
-                <h4>Banco de Ganchos por Objetivo <span className="tag-bonus">Bônus</span></h4>
-                <p>Dezenas de aberturas organizadas por objetivo: engajamento, venda, autoridade. É só escolher o que você quer gerar e adaptar pro seu conteúdo.</p>
-              </div>
-            </div>
-            <div className="deliver-item">
-              <div className="deliver-num">
-                <Bot size={22} strokeWidth={2.2} />
-              </div>
-              <div className="deliver-text">
-                <h4>Prompt de IA: Seu Assistente de Roteiro <span className="tag-bonus">Bônus</span></h4>
-                <p>Um prompt treinado pra escrever roteiros no seu tom, do seu jeito. Chega de resposta genérica. A IA vai trabalhar do jeito que você precisa.</p>
-              </div>
-            </div>
-            <div className="deliver-item">
-              <div className="deliver-num">
-                <Infinity size={22} strokeWidth={2.2} />
-              </div>
-              <div className="deliver-text">
-                <h4>Calendário de 30 Ideias de Conteúdo <span className="tag-bonus">Bônus</span></h4>
-                <p>30 ideias prontas pra um mês inteiro de conteúdo. Nunca mais vai ficar sem saber o que postar. É só pegar uma ideia e gravar.</p>
-              </div>
-            </div>
-            <div className="deliver-item">
-              <div className="deliver-num">
-                <Smile size={22} strokeWidth={2.2} />
-              </div>
-              <div className="deliver-text">
-                <h4>Checklist Grave Sem Travar <span className="tag-bonus">Bônus</span></h4>
-                <p>Um checklist rápido pra você seguir antes de cada gravação e entrar na câmera com confiança. Sem aquela trava de não saber por onde começar.</p>
-              </div>
+            <div className="proof-col">
+              <img src="/imagens-da-landing-page/testemunho-depois-novo.jpeg" alt="Perfil depois" width="500" height="1087" loading="lazy" decoding="async" />
+              <div className="tag tag-depois">Depois</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== É PARA VOCÊ QUE ===== */}
+      {/* ===== 7. É PARA VOCÊ QUE ===== */}
       <section className="foryou">
         <div className="container">
-          <h2 className="section-title !text-[23px]">O Protocolo da Retenção Total<br />é para <em>você que:</em></h2>
+          <h2 className="section-title !text-[23px]">O Protocolo é para você que:</h2>
           <div className="foryou-list">
-            <motion.div 
-              className="foryou-item cursor-pointer"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-              whileHover={{ 
-                scale: 1.02, 
-                y: -4, 
-                borderColor: "#dfc382", 
-                boxShadow: "0 0 25px rgba(223,195,130,0.4), inset 0 0 10px rgba(223,195,130,0.15)" 
-              }}
-            >
-              <span className="dot"><Clapperboard size={13} strokeWidth={2.5} /></span>
-              <p>Quer produzir seus próprios vídeos sem depender de ninguém.</p>
-            </motion.div>
-
-            <motion.div 
-              className="foryou-item cursor-pointer"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-              whileHover={{ 
-                scale: 1.02, 
-                y: -4, 
-                borderColor: "#dfc382", 
-                boxShadow: "0 0 25px rgba(223,195,130,0.4), inset 0 0 10px rgba(223,195,130,0.15)" 
-              }}
-            >
-              <span className="dot"><Lock size={13} strokeWidth={2.5} /></span>
-              <p>Trava na hora de gravar e nunca termina o que começa.</p>
-            </motion.div>
-
-            <motion.div 
-              className="foryou-item cursor-pointer"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-              whileHover={{ 
-                scale: 1.02, 
-                y: -4, 
-                borderColor: "#dfc382", 
-                boxShadow: "0 0 25px rgba(223,195,130,0.4), inset 0 0 10px rgba(223,195,130,0.15)" 
-              }}
-            >
-              <span className="dot"><MessageSquare size={13} strokeWidth={2.5} /></span>
-              <p>Não sabe o que falar e fica semanas sem postar nada.</p>
-            </motion.div>
-
-            <motion.div 
-              className="foryou-item cursor-pointer"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-              whileHover={{ 
-                scale: 1.02, 
-                y: -4, 
-                borderColor: "#dfc382", 
-                boxShadow: "0 0 25px rgba(223,195,130,0.4), inset 0 0 10px rgba(223,195,130,0.15)" 
-              }}
-            >
-              <span className="dot"><Cpu size={13} strokeWidth={2.5} /></span>
-              <p>Já tentou usar o ChatGPT mas o roteiro sempre sai robótico.</p>
-            </motion.div>
-
-            <motion.div 
-              className="foryou-item cursor-pointer"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
-              whileHover={{ 
-                scale: 1.02, 
-                y: -4, 
-                borderColor: "#dfc382", 
-                boxShadow: "0 0 25px rgba(223,195,130,0.4), inset 0 0 10px rgba(223,195,130,0.15)" 
-              }}
-            >
-              <span className="dot"><Rocket size={13} strokeWidth={2.5} /></span>
-              <p>Quer crescer no Instagram e no TikTok só com conteúdo orgânico.</p>
-            </motion.div>
-
-            <motion.div 
-              className="foryou-item cursor-pointer"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
-              whileHover={{ 
-                scale: 1.02, 
-                y: -4, 
-                borderColor: "#dfc382", 
-                boxShadow: "0 0 25px rgba(223,195,130,0.4), inset 0 0 10px rgba(223,195,130,0.15)" 
-              }}
-            >
-              <span className="dot"><Unlock size={13} strokeWidth={2.5} /></span>
-              <p>Não tem tempo nem cabeça pra criar tudo do zero e precisa de algo que destrave a execução.</p>
-            </motion.div>
+            {[
+              { icon: <Lock size={13} strokeWidth={2.5} />,        text: "Trava quando aperta o botão de gravar e não consegue terminar o vídeo." },
+              { icon: <MessageSquare size={13} strokeWidth={2.5} />, text: "Não sabe o que falar e fica semanas sem postar nada." },
+              { icon: <Clapperboard size={13} strokeWidth={2.5} />, text: "Conversando é desenrolada, mas na câmera vira outra pessoa." },
+              { icon: <Cpu size={13} strokeWidth={2.5} />,         text: "Já tentou o ChatGPT mas o roteiro sai robótico e não parece seu." },
+              { icon: <Unlock size={13} strokeWidth={2.5} />,      text: "Quer saber o que falar antes de apertar o botão. Sem improvisar. Sem decorar." },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                className="foryou-item cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+                whileHover={{ scale: 1.02, y: -4, borderColor: "#dfc382", boxShadow: "0 0 25px rgba(223,195,130,0.4), inset 0 0 10px rgba(223,195,130,0.15)" }}
+              >
+                <span className="dot">{item.icon}</span>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ===== OFERTA ===== */}
-      <section className="oferta" id="oferta">
-        <div className="container">
-          <div className="offer-layout">
-          <img src="/imagens-da-landing-page/mockup.webp" alt="Mockup Protocolo da Retenção Total" className="offer-mockup" width="1200" height="675" loading="lazy" decoding="async" />
-          <div className="offer-card">
-            <h3 className="!text-[21px]">Protocolo da Retenção Total</h3>
-            <p className="subline !text-[18px]">Tudo que você precisa para nunca mais travar na frente da câmera</p>
-
-            <div className="stack-item main">
-              <span className="name"><span className="icon">✓</span> Método Protocolo da Retenção Total</span>
-              <span className="price">R$127</span>
-            </div>
-            <div className="stack-item">
-              <span className="name"><span className="icon">★</span> Roteiro Modelo "Preenche e Grava"</span>
-              <span className="price">R$47</span>
-            </div>
-            <div className="stack-item">
-              <span className="name"><span className="icon">★</span> Banco de Ganchos por Objetivo</span>
-              <span className="price">R$37</span>
-            </div>
-            <div className="stack-item">
-              <span className="name"><span className="icon">★</span> Prompt de IA: Seu Assistente de Roteiro</span>
-              <span className="price">R$37</span>
-            </div>
-            <div className="stack-item">
-              <span className="name"><span className="icon">★</span> Calendário de 30 Ideias de Conteúdo</span>
-              <span className="price">R$27</span>
-            </div>
-            <div className="stack-item">
-              <span className="name"><span className="icon">★</span> Checklist Grave Sem Travar</span>
-              <span className="price">R$22</span>
-            </div>
-
-            <div className="total-box">
-              <div className="de">De <s>R$297</s> por apenas</div>
-              <div className="price-final">R$67</div>
-              <div className="parcelas">ou em até 12x no cartão</div>
-            </div>
-
-            <a href="https://sun.eduzz.com/40QRV7AP9B" className="cta-btn" target="_blank" rel="noopener noreferrer">Quero acessar o Protocolo</a>
-          </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== COMO FUNCIONA ===== */}
+      {/* ===== 8. BENEFÍCIOS ===== */}
       <section>
         <div className="container">
-          <div className="section-label label">Simples assim</div>
-          <h2 className="section-title">Adquira agora e receba<br />seu acesso <em>imediatamente</em></h2>
-          <div className="steps">
-            <div className="step">
-              <div className="step-num">1</div>
-              <h4>Acesse seu e-mail</h4>
-              <p>Assim que finalizar a compra, você recebe seu acesso direto no e-mail.</p>
-            </div>
-            <div className="step">
-              <div className="step-num">2</div>
-              <h4>Acesse o material</h4>
-              <p>Todos os entregáveis liberados na hora, sem espera e sem burocracia.</p>
-            </div>
-            <div className="step">
-              <div className="step-num">3</div>
-              <h4>Tudo pronto!</h4>
-              <p>Agora é só aplicar o método e criar seus vídeos que prendem ainda hoje.</p>
-            </div>
+          <h2 className="section-title">Com o Protocolo você vai:</h2>
+          <div className="benef-grid">
+            {[
+              { icon: <Compass size={16} strokeWidth={2.5} />,    text: "Saber exatamente por onde começar cada vídeo. Nada de olhar pra câmera sem ter o que dizer." },
+              { icon: <Video size={16} strokeWidth={2.5} />,      text: "Transformar qualquer ideia em uma estrutura de roteiro sem passar horas escrevendo." },
+              { icon: <Sparkles size={16} strokeWidth={2.5} />,   text: "Gravar sem precisar decorar cada palavra e ainda assim soar completamente natural." },
+              { icon: <Calendar size={16} strokeWidth={2.5} />,   text: "Parar de depender de inspiração e ter uma estrutura sempre que a câmera ligar." },
+              { icon: <TrendingUp size={16} strokeWidth={2.5} />, text: "Parar de gravar dez vezes o mesmo vídeo e apagar tudo no final." },
+              { icon: <Crown size={16} strokeWidth={2.5} />,      text: "Usar o método em qualquer ideia. Toda vez que precisar gravar, a estrutura está pronta." },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                className="benef"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+              >
+                <span className="check">{item.icon}</span>
+                <p>{item.text}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ===== DUAS ESCOLHAS ===== */}
-      <section>
-        <div className="container">
-          <div className="section-label label">A decisão é sua</div>
-          <h2 className="section-title">Agora você tem <em>duas escolhas</em></h2>
-          <div className="choices">
-            <div className="choice bad">
-              <div className="opt-label">Opção 1</div>
-              <h4>Continuar travado</h4>
-              <p>Seguir apagando vídeos, adiando pra semana que vem, pro próximo mês, pro "quando der tempo". E ver o tempo passar sem sair do lugar.</p>
-            </div>
-            <div className="choice good">
-              <div className="opt-label">Opção 2</div>
-              <h4>Destravar hoje</h4>
-              <p>Acessar o Protocolo da Retenção Total, aplicar a estrutura e ter seus vídeos prendendo a atenção da audiência a partir de agora.</p>
-            </div>
-          </div>
-          <p className="choices-note">Eu sei, e você também sabe: a <em>opção 2</em> é a mais inteligente.</p>
-          <a href="https://sun.eduzz.com/40QRV7AP9B" className="cta-btn cta-pulse" target="_blank" rel="noopener noreferrer" style={{ display: 'block', maxWidth: '420px', margin: '32px auto 0', textAlign: 'center' }}>QUERO DESTRAVAR AGORA</a>
-        </div>
-      </section>
-
-      {/* ===== QUEM É O GIO ===== */}
+      {/* ===== 9. QUEM É O GIO ===== */}
       <section className="about">
         <div className="container">
           <div className="about-card">
@@ -439,41 +241,227 @@ export default function LandingPage() {
             <h3>O criador do Protocolo é o <em>Gio Seed</em></h3>
             <p>Giovanni Santos de Oliveira nasceu no interior do Amazonas, em Itacoatiara. Trabalhou desde os 12 anos, passou um ano fazendo freelance em supermercados de Jaraguá do Sul e aprendeu edição sozinho, no YouTube, gravando com o próprio celular.</p>
             <p>Por muito tempo ele postava vídeos que ninguém assistia. Vinte, trinta visualizações. Até descobrir que o problema nunca foi a câmera. <strong>Era a falta de roteiro.</strong> Quando começou a aplicar storytelling, um dos seus vídeos passou de <strong>400 mil visualizações</strong>.</p>
-            <p>Hoje ele tem mais de <strong>14 mil seguidores</strong>, mora em Balneário Camboriú e atende clientes com a sua produtora. O Protocolo da Retenção Total é exatamente o método que ele usou pra chegar até aqui. Pronto pra você copiar e aplicar.</p>
+            <p>Hoje ele tem mais de <strong>30 mil seguidores</strong> (18 mil no Instagram e 12 mil no TikTok), mora em Balneário Camboriú e atende clientes com a sua produtora. O Protocolo da Retenção Total é exatamente o método que ele usou pra chegar até aqui.</p>
           </div>
         </div>
       </section>
 
-      {/* ===== FAQ ===== */}
+      {/* ===== 10. O QUE VOCÊ RECEBE ===== */}
+      <section>
+        <div className="container">
+          <h2 className="section-title !text-[24px]">O que você recebe no <em>Protocolo da Retenção Total</em></h2>
+          <div className="deliverables">
+            <div className="deliver-item">
+              <div className="deliver-num"><Layers size={22} strokeWidth={2.2} /></div>
+              <div className="deliver-text">
+                <h4>Método Protocolo da Retenção Total</h4>
+                <p>A estrutura completa em 3 passos para transformar qualquer ideia em um roteiro que você consegue gravar, mesmo que você trave na frente da câmera.</p>
+              </div>
+            </div>
+            <div className="deliver-item">
+              <div className="deliver-num"><FileText size={22} strokeWidth={2.2} /></div>
+              <div className="deliver-text">
+                <h4>Roteiro Modelo "Preenche e Grava" <span className="tag-bonus">Bônus</span></h4>
+                <p>Um roteiro com lacunas para você preencher e gravar na hora. Sem travar, sem tela em branco.</p>
+              </div>
+            </div>
+            <div className="deliver-item">
+              <div className="deliver-num"><Magnet size={22} strokeWidth={2.2} /></div>
+              <div className="deliver-text">
+                <h4>Banco de Ganchos por Objetivo <span className="tag-bonus">Bônus</span></h4>
+                <p>Dezenas de aberturas organizadas por objetivo: engajamento, venda, autoridade. É só escolher e adaptar.</p>
+              </div>
+            </div>
+            <div className="deliver-item">
+              <div className="deliver-num"><Bot size={22} strokeWidth={2.2} /></div>
+              <div className="deliver-text">
+                <h4>Prompt de IA: Assistente de Roteiro <span className="tag-bonus">Bônus</span></h4>
+                <p>Um prompt treinado para escrever roteiros no seu tom e do seu jeito. A IA trabalha a favor da sua voz.</p>
+              </div>
+            </div>
+            <div className="deliver-item">
+              <div className="deliver-num"><Infinity size={22} strokeWidth={2.2} /></div>
+              <div className="deliver-text">
+                <h4>Calendário de 30 Ideias de Conteúdo <span className="tag-bonus">Bônus</span></h4>
+                <p>30 ideias prontas para um mês inteiro. Nunca mais vai ficar sem saber o que postar.</p>
+              </div>
+            </div>
+            <div className="deliver-item">
+              <div className="deliver-num"><Smile size={22} strokeWidth={2.2} /></div>
+              <div className="deliver-text">
+                <h4>Checklist Grave Sem Travar <span className="tag-bonus">Bônus</span></h4>
+                <p>Um checklist rápido para seguir antes de cada gravação e entrar na câmera com clareza.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 11. OBJEÇÃO CHATGPT ===== */}
+      <section className="chatgpt-obj">
+        <div className="container">
+          <div className="section-label label" style={{ textAlign: 'center', marginBottom: '20px' }}>E o ChatGPT?</div>
+          <h2 className="section-title !text-[22px]">"Mas eu posso pedir pro ChatGPT<br />escrever meu roteiro."</h2>
+          <div className="chatgpt-resp">
+            <p><strong>Pode.</strong></p>
+            <p>O problema é que um texto bonito na tela não significa que você sabe como falar aquilo naturalmente diante da câmera.</p>
+            <p>O ChatGPT entrega um texto. O Protocolo te ensina uma estrutura.</p>
+            <p>Com o Protocolo você aprende <em>como pensar</em> cada vídeo. Com a sua voz, do seu jeito. Não um texto para decorar.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 12. OFERTA ===== */}
+      <section className="oferta" id="oferta">
+        <div className="container">
+          <h2 className="section-title !text-[22px]" style={{ marginBottom: '40px' }}>
+            Você está a poucos passos<br />de parar de travar.
+          </h2>
+          <div className="offer-layout">
+            <img
+              src="/imagens-da-landing-page/mockup.webp"
+              alt="Protocolo da Retenção Total"
+              className="offer-mockup"
+              width="1200" height="675"
+              loading="lazy" decoding="async"
+            />
+            <div className="offer-card">
+              <h3 className="!text-[21px]">Protocolo da Retenção Total</h3>
+              <p className="subline">Seu método de 3 passos para saber o que falar antes de apertar o botão de gravar.</p>
+
+              <div className="stack-item main">
+                <span className="name"><span className="icon">✓</span> Método Protocolo da Retenção Total</span>
+              </div>
+              <div className="stack-item">
+                <span className="name"><span className="icon">★</span> Roteiro Modelo "Preenche e Grava"</span>
+              </div>
+              <div className="stack-item">
+                <span className="name"><span className="icon">★</span> Banco de Ganchos por Objetivo</span>
+              </div>
+              <div className="stack-item">
+                <span className="name"><span className="icon">★</span> Prompt de IA: Assistente de Roteiro</span>
+              </div>
+              <div className="stack-item">
+                <span className="name"><span className="icon">★</span> Calendário de 30 Ideias de Conteúdo</span>
+              </div>
+              <div className="stack-item">
+                <span className="name"><span className="icon">★</span> Checklist Grave Sem Travar</span>
+              </div>
+
+              <div className="total-box">
+                <div className="price-final">R$67</div>
+                <div className="parcelas">ou em até 12x no cartão</div>
+              </div>
+
+              <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center' }}>
+                QUERO SABER O QUE FALAR
+              </a>
+
+              <div className="garantia-badge">
+                <span className="garantia-icon">🛡️</span>
+                <div>
+                  <strong>Garantia de 7 dias</strong>
+                  <p>Se você não gostar por qualquer motivo, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 13. COMO VOCÊ RECEBE ===== */}
+      <section>
+        <div className="container">
+          <div className="section-label label">Acesso imediato</div>
+          <h2 className="section-title">Como você recebe</h2>
+          <div className="steps">
+            <div className="step">
+              <div className="step-num">1</div>
+              <h4>Finalize o pedido</h4>
+              <p>Escolha a forma de pagamento: Pix ou cartão em até 12x.</p>
+            </div>
+            <div className="step">
+              <div className="step-num">2</div>
+              <h4>Acesse pelo e-mail</h4>
+              <p>Assim que o pagamento for confirmado, você recebe o acesso direto no e-mail.</p>
+            </div>
+            <div className="step">
+              <div className="step-num">3</div>
+              <h4>Aplique hoje mesmo</h4>
+              <p>Todo o material liberado na hora. É só abrir e começar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 14. FAQ ===== */}
       <section>
         <div className="container">
           <div className="section-label label">Perguntas frequentes</div>
           <h2 className="section-title">Ainda com <em>dúvidas?</em></h2>
           <div className="faq-list">
             <details className="faq-item">
-              <summary>Qual é a forma de pagamento?</summary>
-              <div className="faq-body">Você pode pagar via Pix ou cartão de crédito, em até 12x. O acesso é liberado na hora após a confirmação.</div>
+              <summary>Preciso saber falar bem para usar o método?</summary>
+              <div className="faq-body">Não. O Protocolo foi criado exatamente para quem não sabe o que falar. A estrutura te diz por onde começar, o que desenvolver e como terminar. Não precisa ser um comunicador nato.</div>
             </details>
             <details className="faq-item">
-              <summary>O pagamento é seguro?</summary>
-              <div className="faq-body">Sim. O processamento é feito por plataforma de pagamento segura, com criptografia. Seus dados ficam protegidos do início ao fim.</div>
+              <summary>Preciso decorar o roteiro?</summary>
+              <div className="faq-body">Não. O Protocolo não é um roteiro para decorar. É uma estrutura para você saber o que falar. A ideia é que você grave com naturalidade, sem parecer que está lendo ou recitando.</div>
             </details>
             <details className="faq-item">
-              <summary>Funciona pra mim?</summary>
-              <div className="faq-body">Se você quer produzir vídeos que prendem a atenção e não sabe por onde começar, funciona. O método serve tanto pra quem está no zero quanto pra quem já grava mas não vê resultado.</div>
+              <summary>Funciona para quem trava na câmera?</summary>
+              <div className="faq-body">Sim. Se você trava é porque não sabe o que falar. É exatamente isso que o Protocolo resolve. Quando você tem uma estrutura clara, a trava diminui porque você sabe por onde começar.</div>
+            </details>
+            <details className="faq-item">
+              <summary>É um curso ou um e-book?</summary>
+              <div className="faq-body">É um material digital no formato e-book. O que você está comprando é o método, não páginas. O Protocolo da Retenção Total é uma estrutura de 3 passos que você aplica em qualquer vídeo.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Funciona para diferentes tipos de vídeos?</summary>
+              <div className="faq-body">Sim. A estrutura de 3 passos funciona para conteúdo educativo, vídeos de venda, autoridade, entretenimento. Qualquer formato onde você transforma uma ideia em fala.</div>
             </details>
             <details className="faq-item">
               <summary>Preciso de câmera ou equipamento caro?</summary>
-              <div className="faq-body">Não. Tudo foi pensado pra ser feito só com o celular. O foco é o roteiro e a estrutura, não o equipamento.</div>
+              <div className="faq-body">Não. O foco é o roteiro e a estrutura, não o equipamento. Tudo pode ser feito com o celular.</div>
             </details>
             <details className="faq-item">
-              <summary>Como vou acessar o material?</summary>
-              <div className="faq-body">Assim que a compra for confirmada, você recebe todos os entregáveis no seu e-mail, com acesso imediato e vitalício.</div>
+              <summary>Como recebo o acesso?</summary>
+              <div className="faq-body">Assim que o pagamento for confirmado, você recebe todos os materiais direto no seu e-mail, com acesso imediato e vitalício.</div>
             </details>
           </div>
         </div>
       </section>
 
+      {/* ===== 15. CTA FINAL ===== */}
+      <section className="cta-final-section">
+        <div className="container">
+          <div className="cta-final-card">
+            <p className="cta-final-dor">
+              Da próxima vez que você abrir a câmera,<br />
+              você pode continuar pensando:
+            </p>
+            <p className="cta-final-pergunta">"O que eu vou falar?"</p>
+            <p className="cta-final-ou">
+              Ou pode ter uma estrutura simples para saber<br />
+              exatamente por onde começar.
+            </p>
+            <h3 className="cta-final-nome">Protocolo da Retenção Total</h3>
+            <p className="cta-final-desc">Um método de 3 passos para transformar suas ideias em roteiros fáceis de gravar.</p>
+            <div className="cta-final-price">R$67</div>
+            <a
+              href={CHECKOUT}
+              className="cta-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'block', maxWidth: '420px', margin: '0 auto', textAlign: 'center' }}
+            >
+              QUERO SABER O QUE FALAR
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FOOTER ===== */}
       <footer>
         <div className="footer-cta">
           <img src="/imagens-da-landing-page/logo.webp" alt="Gio Seed" className="footer-logo" width="240" height="240" loading="lazy" decoding="async" />
