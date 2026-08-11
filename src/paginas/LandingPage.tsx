@@ -359,7 +359,7 @@ export default function LandingPage() {
                 <div className="parcelas">ou em até 12x no cartão</div>
               </div>
 
-              <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center' }} onClick={trackCheckout}>
+              <a href={CHECKOUT} className="cta-btn" style={{ display: 'block', textAlign: 'center' }} onClick={trackCheckout}>
                 QUERO SABER O QUE FALAR
               </a>
 
