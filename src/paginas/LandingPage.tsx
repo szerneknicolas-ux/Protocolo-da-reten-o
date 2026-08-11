@@ -3,6 +3,12 @@ import { motion } from 'motion/react';
 
 const CHECKOUT = "https://sun.eduzz.com/40QRV7AP9B";
 
+function trackCheckout() {
+  if (typeof (window as any).fbq === 'function') {
+    (window as any).fbq('track', 'InitiateCheckout');
+  }
+}
+
 export default function LandingPage() {
   return (
     <>
@@ -147,7 +153,7 @@ export default function LandingPage() {
             <span className="passos-resultado-label">Resultado:</span> Um roteiro que você consegue gravar. Sem decorar. Sem travar.
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer">
+            <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer" onClick={trackCheckout}>
               QUERO SABER O QUE FALAR
             </a>
           </div>
@@ -353,7 +359,7 @@ export default function LandingPage() {
                 <div className="parcelas">ou em até 12x no cartão</div>
               </div>
 
-              <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center' }}>
+              <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer" style={{ display: 'block', textAlign: 'center' }} onClick={trackCheckout}>
                 QUERO SABER O QUE FALAR
               </a>
 
@@ -454,6 +460,7 @@ export default function LandingPage() {
               target="_blank"
               rel="noopener noreferrer"
               style={{ display: 'block', maxWidth: '420px', margin: '0 auto', textAlign: 'center' }}
+              onClick={trackCheckout}
             >
               QUERO SABER O QUE FALAR
             </a>
