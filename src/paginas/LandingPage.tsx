@@ -153,7 +153,7 @@ export default function LandingPage() {
             <span className="passos-resultado-label">Resultado:</span> Um roteiro que você consegue gravar. Sem decorar. Sem travar.
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <a href={CHECKOUT} className="cta-btn" target="_blank" rel="noopener noreferrer" onClick={trackCheckout}>
+            <a href={CHECKOUT} className="cta-btn" onClick={trackCheckout}>
               QUERO SABER O QUE FALAR
             </a>
           </div>
@@ -457,8 +457,6 @@ export default function LandingPage() {
             <a
               href={CHECKOUT}
               className="cta-btn"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{ display: 'block', maxWidth: '420px', margin: '0 auto', textAlign: 'center' }}
               onClick={trackCheckout}
             >
