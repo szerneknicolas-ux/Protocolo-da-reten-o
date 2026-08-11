@@ -3,10 +3,14 @@ import { motion } from 'motion/react';
 
 const CHECKOUT = "https://sun.eduzz.com/40QRV7AP9B";
 
-function trackCheckout() {
+function trackCheckout(e: React.MouseEvent<HTMLAnchorElement>) {
   if (typeof (window as any).fbq === 'function') {
     (window as any).fbq('track', 'InitiateCheckout');
   }
+  // fallback: garante navegação mesmo se o pixel interceptar e travar
+  e.preventDefault();
+  const url = (e.currentTarget as HTMLAnchorElement).href;
+  setTimeout(() => { window.location.href = url; }, 300);
 }
 
 export default function LandingPage() {
